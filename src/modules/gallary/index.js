@@ -20,7 +20,7 @@ export default function Gallary() {
         <img src={haircut} alt="haircut" />
         <div className="gallary-content">
           <div className="container">
-            <div className="gallary-head">
+            <div className="gallary-head" data-aos="fade-up" data-aos-duration="1000">
               <h2>Our Services</h2>
             </div>
             <div className="gallary-grid">
@@ -55,7 +55,7 @@ export default function Gallary() {
 
       <div className="experience">
         <div className="container">
-          <div className="experience-head">
+          <div className="experience-head" data-aos="fade-up" data-aos-duration="1000">
             <h2>Experience the Best Haircut & Shave Services</h2>
           </div>
         </div>
@@ -88,7 +88,7 @@ export default function Gallary() {
         </div>
         <div className="margin-price">
           <div className="container">
-            <div className="pricing-head">
+            <div className="pricing-head" data-aos="fade-up" data-aos-duration="1000">
               <h2>Our Pricing</h2>
             </div>
             <div className="pricing-head-grid">

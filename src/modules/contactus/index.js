@@ -13,7 +13,7 @@ export default function Contactus() {
             </div>
             <div className="contact-grid2">
               <div className="contact-grid2-content">
-                <h2>Contact Us!</h2>
+                <h2 data-aos="fade-up" data-aos-duration="1000">Contact Us!</h2>
                 <input type="text" placeholder='Enter your Name'/>
                 <input type="email" placeholder='Enter your Email'/>
                 <textarea placeholder='Enter your message'></textarea>

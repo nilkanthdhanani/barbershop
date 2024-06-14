@@ -12,6 +12,7 @@
         display: grid;
         grid-template-columns: 490px 1fr;
         gap: 0;
+        overflow: hidden;
 
         @media (max-width: 1024px) {
             grid-template-columns: 1fr;
@@ -164,6 +165,7 @@
         .wcu-content-grid {
             @include grid-2-columns;
             gap: 0;
+            overflow: hidden;
 
             @media (max-width: 1024px) {
                 grid-template-columns: repeat(1, 1fr);
@@ -356,6 +358,7 @@
 .studio {
     background-color: var(--bgcolor-studio);
     padding: 130px 0;
+    overflow: hidden;
 
     @media (max-width: 500px) {
         padding: 100px 0 300px 0;
@@ -483,6 +486,7 @@
 
 .consult {
     padding: 200px 0;
+    overflow: hidden;
 
     @media (max-width: 875px) {
         padding: 150px 0;

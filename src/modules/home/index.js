@@ -78,7 +78,7 @@ export default function Home() {
       <div className="hero-banner">
         <div className="container">
           <div className="hero-banner-grid">
-            <div className="hero-banner-grid1">
+            <div className="hero-banner-grid1" data-aos="fade-right" data-aos-duration="5000">
               <div className="hbg1">
                 <span>WELCOME TO</span>
                 <h1>Barbershop<br />
@@ -105,7 +105,7 @@ export default function Home() {
                 <button>BOOK ONLINE</button>
               </div>
             </div>
-            <div className="hero-banner-grid2">
+            <div className="hero-banner-grid2" data-aos="zoom-in-left" data-aos-duration="2000">
               <img src={heroBanner} alt="heroBanner" />
             </div>
           </div>
@@ -168,7 +168,7 @@ export default function Home() {
         <div className="wcu-content">
           <div className="container">
             <div className="wcu-content-grid">
-              <div className="wcu-content-grid1">
+              <div className="wcu-content-grid1" data-aos="fade-right" data-aos-duration="1000">
                 <h3>WORKING HOURSE</h3>
                 <div className="wcu-content-grid1-list">
                   <span>SUNDAY 10 AM – 5 PM</span>
@@ -183,7 +183,7 @@ export default function Home() {
                   <button>BOOK ONLINE</button>
                 </div>
               </div>
-              <div className="wcu-content-grid2">
+              <div className="wcu-content-grid2" data-aos="fade-left" data-aos-duration="1000">
                 <h2>Why choose us?</h2>
                 <p>In addition, there 5 more reasons why men prefer Manhattan Barbershop N.Y.C:</p>
                 <div className="wcu-content-grid2-list">
@@ -214,7 +214,7 @@ export default function Home() {
 
       <div className="pricing">
         <div className="container">
-          <div className="pricing-head">
+          <div className="pricing-head" data-aos="fade-up" data-aos-duration="1000">
             <h2>Our Pricing</h2>
           </div>
           <div className="pricing-head-grid">
@@ -281,14 +281,14 @@ export default function Home() {
       <div className="studio">
         <div className="container">
           <div className="studio-div">
-            <img src={studioGBG} alt="studioGBG" />
+            <img src={studioGBG} alt="studioGBG" data-aos="fade-right" data-aos-duration="1000" />
             <div className="studio-div-yallow">
-              <img src={studioYBG} alt="studioYBG" />
+              <img src={studioYBG} alt="studioYBG" data-aos="fade-left" data-aos-duration="2000" />
             </div>
             <div className="studio-div-men">
-              <img src={studioMen} alt="studioMen" />
+              <img src={studioMen} alt="studioMen" data-aos="zoom-in" data-aos-delay="700" data-aos-offset="0" />
             </div>
-            <div className="studio-div-content">
+            <div className="studio-div-content" data-aos="zoom-in-left" data-aos-duration="1000">
               <h2>Welcome to the upscale barber studio</h2>
               <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
               <div className="hbg1-button">
@@ -302,14 +302,14 @@ export default function Home() {
       <div className="consult">
         <div className="container">
           <div className="consult-div">
-            <img src={consultYBG} alt="consultYBG" />
+            <img src={consultYBG} alt="consultYBG" data-aos="fade-right" data-aos-duration="1000" />
             <div className="consult-div-yallow">
-              <img src={consultGBG} alt="consultGBG" />
+              <img src={consultGBG} alt="consultGBG" data-aos="fade-left" data-aos-duration="2000" />
             </div>
             <div className="consult-div-men">
-              <img src={consultMen} alt="consultMen" />
+              <img src={consultMen} alt="consultMen" data-aos="zoom-in" data-aos-delay="700" data-aos-offset="0" />
             </div>
-            <div className="consult-div-content">
+            <div className="consult-div-content" data-aos="zoom-in-left" data-aos-duration="1000">
               <h2>Get in touch with our expert barbers for a FREE one-on-one consultation</h2>
               <div className="hbg1-button">
                 <button>BOOK ONLINE</button>
@@ -321,7 +321,7 @@ export default function Home() {
 
       <div className="service">
         <div className="container">
-          <div className="service-head">
+          <div className="service-head" data-aos="fade-up" data-aos-duration="1000">
             <h2>Barbershop Services</h2>
             <p>Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
           </div>
@@ -364,7 +364,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="service-head2">
+          <div className="service-head2" data-aos="fade-up" data-aos-duration="1000">
             <h3>Experience the Best Haircut & Shave Services</h3>
           </div>
         </div>
@@ -397,8 +397,8 @@ export default function Home() {
         </div>
         <div className="container">
           <div className="margin-text">
-            <h2>Testimonials</h2>
-            <div className="margin-text-pera">
+            <h2 data-aos="fade-up" data-aos-duration="1000">Testimonials</h2>
+            <div className="margin-text-pera" data-aos="fade-up" data-aos-duration="1000">
               <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
             </div>
             <div className="margin-text-slider">

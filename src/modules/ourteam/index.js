@@ -16,7 +16,7 @@ export default function Ourteam() {
     <div>
       <div className="brbers">
         <div className="brbers-grid">
-          <div className="brbers-grid1">
+          <div className="brbers-grid1" data-aos="fade-right" data-aos-duration="5000">
             <div className="bg1">
               <span>ABOUT US</span>
               <h1>Licensed <br />
@@ -27,7 +27,7 @@ export default function Ourteam() {
               </div>
             </div>
           </div>
-          <div className="brbers-grid2">
+          <div className="brbers-grid2" data-aos="zoom-in-left" data-aos-duration="2000">
             <img src={ourteamHB} alt="ourteamHB" />
           </div>
         </div>
@@ -35,7 +35,7 @@ export default function Ourteam() {
 
       <div className="team">
         <div className="container">
-          <div className="team-head">
+          <div className="team-head" data-aos="fade-up" data-aos-duration="1000">
             <h2>Our Barbers</h2>
           </div>
           <div className="team-grid">
@@ -136,13 +136,13 @@ export default function Ourteam() {
       <div className="groom">
         <div className="groom-div">
           <div className="container">
-            <h2>Full service barber shop & men’s grooming studio</h2>
-            <div className="groom-div-pera">
+            <h2 data-aos="fade-up" data-aos-duration="1000">Full service barber shop & men’s grooming studio</h2>
+            <div className="groom-div-pera" data-aos="fade-up" data-aos-duration="1000">
               <p>Simple Text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur id suscipit ex. Suspendisse rhoncus laoreet purus quis elementum.</p>
             </div>
             <div className="groom-div-button">
-              <button>VIEW PRICING</button>
-              <button>BOOK NOW</button>
+              <button data-aos="fade-right" data-aos-duration="1000">VIEW PRICING</button>
+              <button data-aos="fade-left" data-aos-duration="1000">BOOK NOW</button>
             </div>
           </div>
         </div>
