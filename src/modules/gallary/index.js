@@ -53,10 +53,10 @@ export default function Gallary() {
         </div>
       </div>
 
-      <div className="service">
+      <div className="experience">
         <div className="container">
-          <div className="service-head2">
-            <h3>Experience the Best Haircut & Shave Services</h3>
+          <div className="experience-head">
+            <h2>Experience the Best Haircut & Shave Services</h2>
           </div>
         </div>
       </div>
@@ -92,56 +92,52 @@ export default function Gallary() {
               <h2>Our Pricing</h2>
             </div>
             <div className="pricing-head-grid">
-              <div className="pricing-head-grid1">
-                <div className="pricing-head-grid1-box">
-                  <div className="phgb-flex">
-                    <h3>Regular haircut</h3>
-                    <span>$34+</span>
-                  </div>
-                </div>
-                <div className="pricing-head-grid1-box">
-                  <div className="phgb-flex">
-                    <h3>Haircut + Royal Shave</h3>
-                    <span>$60+</span>
-                  </div>
-                </div>
-                <div className="pricing-head-grid1-box">
-                  <div className="phgb-flex">
-                    <h3>Beard Trim Machine</h3>
-                    <span>$23+</span>
-                  </div>
-                </div>
-                <div className="pricing-head-grid1-box">
-                  <div className="phgb-flex">
-                    <h3>Haircut and Facial</h3>
-                    <span>$50+</span>
-                  </div>
+              <div className="pricing-head-grid1-box">
+                <div className="phgb-flex">
+                  <h3>Regular haircut</h3>
+                  <span>$34+</span>
                 </div>
               </div>
-              <div className="pricing-head-grid1">
-                <div className="pricing-head-grid1-box">
-                  <div className="phgb-flex">
-                    <h3>Royal Shave</h3>
-                    <span>$35+</span>
-                  </div>
+              <div className="pricing-head-grid1-box">
+                <div className="phgb-flex">
+                  <h3>Haircut + Royal Shave</h3>
+                  <span>$60+</span>
                 </div>
-                <div className="pricing-head-grid1-box">
-                  <div className="phgb-flex">
-                    <h3>Haircut + Beard Trim</h3>
-                    <span>$65+</span>
-                  </div>
+              </div>
+              <div className="pricing-head-grid1-box">
+                <div className="phgb-flex">
+                  <h3>Beard Trim Machine</h3>
+                  <span>$23+</span>
                 </div>
-                <div className="pricing-head-grid1-box">
-                  <div className="phgb-flex">
-                    <h3>Beard + Facial</h3>
-                    <span>$55+</span>
-                  </div>
+              </div>
+              <div className="pricing-head-grid1-box">
+                <div className="phgb-flex">
+                  <h3>Haircut and Facial</h3>
+                  <span>$50+</span>
                 </div>
-                <div className="pricing-head-grid1-box">
-                  <div className="phgb-flex">
-                    <h3>Men’s Facial </h3>
-                    <span>$25+</span>
-                  </div>
+              </div>
+              <div className="pricing-head-grid1-box">
+                <div className="phgb-flex">
+                  <h3>Royal Shave</h3>
+                  <span>$35+</span>
+                </div>
+              </div>
+              <div className="pricing-head-grid1-box">
+                <div className="phgb-flex">
+                  <h3>Haircut + Beard Trim</h3>
+                  <span>$65+</span>
+                </div>
+              </div>
+              <div className="pricing-head-grid1-box">
+                <div className="phgb-flex">
+                  <h3>Beard + Facial</h3>
+                  <span>$55+</span>
+                </div>
+              </div>
+              <div className="pricing-head-grid1-box">
+                <div className="phgb-flex">
+                  <h3>Men’s Facial </h3>
+                  <span>$25+</span>
                 </div>
               </div>
             </div>

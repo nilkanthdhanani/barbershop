@@ -29,6 +29,10 @@
                 font-family: var(--font-family-montserrat);
                 color: var(--color-white);
                 text-align: center;
+
+                @media (max-width: 576px) {
+                    @include font38;
+                }
             }
         }
 
@@ -69,6 +73,12 @@
                         text-align: center;
                         padding: 20px 0;
                         @include font24mon;
+
+                        @media (max-width: 576px) {
+                            @include font20;
+                            font-weight: 700;
+                            line-height: 1.2;
+                        }
                     }
                 }
             }
@@ -76,37 +86,23 @@
     }
 }
 
-.service {
+.experience {
     padding: 60px 0 175px 0;
     background-color: var(--bgcolor-service);
 
-    .service-head {
+    .experience-head {
         color: var(--color-white);
+        margin-bottom: 45px;
 
         h2 {
             text-align: center;
             @include font48;
             font-family: var(--font-family-montserrat);
-        }
 
-        p {
-            text-align: center;
-            margin: 20px 0 45px 0;
-            @include font18;
-            font-weight: 400;
-        }
-    }
-
-    .service-head2 {
-        color: var(--color-white);
-        @include flex-center;
-        padding: 50px 0 100px 0;
-
-        h3 {
-            @include font55;
-            font-family: var(--font-family-montserrat);
-            max-width: 840px;
-            text-align: center;
+            @media (max-width: 576px) {
+                @include font38;
+                font-weight: 700;
+            }
         }
     }
 }
@@ -117,15 +113,7 @@
     padding: 670px 0 50px 0;
 
     @media (max-width: 1024px) {
-        padding: 900px 0 50px 0;
-    }
-
-    @media (max-width: 730px) {
         padding: 800px 0 50px 0;
-    }
-
-    @media (max-width: 670px) {
-        padding: 700px 0 50px 0;
     }
 
     @media (max-width: 576px) {
@@ -174,7 +162,7 @@
                         transition: 0.3s ease-in-out;
                     }
 
-                    @media (max-width: 576px) {
+                    @media (max-width: 1024px) {
                         min-height: 300px;
                         max-height: 300px;
                     }
@@ -191,33 +179,62 @@
                 @include font55;
                 font-family: var(--font-family-montserrat);
                 color: var(--color-white);
+
+                @media (max-width: 1024px) {
+                    margin-top: 30px;
+                }
+
+                @media (max-width: 576px) {
+                    @include font38;
+                    margin-top: 30px;
+                }
             }
         }
 
         .pricing-head-grid {
             @include grid-2-columns;
 
-            .pricing-head-grid1 {
-                .pricing-head-grid1-box {
-                    padding: 20px 30px;
-                    background-color: var(--color-white);
-                    margin-bottom: 20px;
+            @media (max-width: 576px) {
+                @include grid-1-columns;
+                gap: 0;
+            }
 
-                    .phgb-flex {
-                        @include flex;
-                        justify-content: space-between;
-                        padding: 20px 0;
+            .pricing-head-grid1-box {
+                padding: 20px 30px;
+                background-color: var(--color-white);
+                margin-bottom: 20px;
 
-                        h3 {
-                            @include font24mon;
-                            color: var(--color-black-light);
+                @media (max-width: 576px) {
+                    padding: 10px 15px;
+                }
+
+                .phgb-flex {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: start;
+                    padding: 20px 0;
+
+                    h3 {
+                        @include font24mon;
+                        color: var(--color-black-light);
+
+                        @media (max-width: 576px) {
+                            @include font20;
+                            font-weight: 700;
+                            line-height: 1.2;
                         }
+                    }
 
-                        span {
-                            display: block;
-                            @include font24mon;
-                            color: var(--color-gray-header);
-                            font-weight: 600;
+                    span {
+                        display: block;
+                        @include font24mon;
+                        color: var(--color-gray-header);
+                        font-weight: 600;
+
+                        @media (max-width: 576px) {
+                            @include font20;
+                            font-weight: 700;
+                            line-height: 1.2;
                         }
                     }
                 }

@@ -198,6 +198,12 @@
                         text-align: center;
                         @include font20;
                         color: var(--color-black-light);
+
+                        @media (max-width: 576px) {
+                            @include font18;
+                            font-weight: 400;
+                            line-height: 2.2;
+                        }
                     }
                 }
 
@@ -280,7 +286,7 @@
             color: var(--color-black-light);
 
             @media (max-width: 576px) {
-                @include font38;
+                @include font30;
                 margin-bottom: 20px;
             }
         }
@@ -316,9 +322,8 @@
                     color: var(--color-black-light);
 
                     @media (max-width: 576px) {
-                        @include font20;
+                        @include font18;
                         font-family: var(--font-family-montserrat);
-                        font-weight: 600;
                     }
                 }
 
@@ -329,9 +334,8 @@
                     font-weight: 600;
 
                     @media (max-width: 576px) {
-                        @include font20;
+                        @include font18;
                         font-family: var(--font-family-montserrat);
-                        font-weight: 600;
                     }
                 }
             }
@@ -563,7 +567,7 @@
                 @media (max-width: 576px) {
                     width: 100%;
                     min-height: 100%;
-                    
+
                     padding: 0 20px;
                 }
             }
@@ -630,7 +634,7 @@
             font-family: var(--font-family-montserrat);
 
             @media (max-width: 576px) {
-                @include font30;
+                @include font38;
                 font-weight: 700;
             }
         }
@@ -699,6 +703,10 @@
                     @include font24mon;
                     text-align: center;
                     color: var(--color-black-light);
+
+                    @media (max-width: 576px) {
+                        @include font30;
+                    }
                 }
             }
         }
@@ -720,7 +728,7 @@
             text-align: center;
 
             @media (max-width: 576px) {
-                @include font30;
+                @include font38;
                 font-weight: 700;
             }
         }
