@@ -1,0 +1,227 @@
+@import "../../styles/typography/typography";
+@import "../../styles/mixin/mixin";
+
+.gallary {
+    background-image: url("../../assets/images/jpg/whyChooseBG.jpg");
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 60px;
+
+    img {
+        width: 100%;
+        max-height: 687px;
+        object-fit: cover;
+
+        @media (max-width: 1024px) {
+            min-height: 500px;
+        }
+    }
+
+    .gallary-content {
+        margin-top: -313px;
+        position: relative;
+
+        .gallary-head {
+            h2 {
+                @include font55;
+                font-family: var(--font-family-montserrat);
+                color: var(--color-white);
+                text-align: center;
+            }
+        }
+
+        .gallary-grid {
+            margin-top: 65px;
+            @include grid-4-columns;
+
+            @media (max-width: 1024px) {
+                @include grid-2-columns;
+            }
+
+            @media (max-width: 576px) {
+                @include grid-1-columns;
+            }
+
+            .gallary-grid-box {
+                position: relative;
+
+                img {
+                    width: 100%;
+                    min-height: 300px;
+                    object-fit: cover;
+
+                    @media (max-width: 1024px) {
+                        min-height: 100%;
+                    }
+                }
+
+                .gallary-grid-abso {
+                    position: absolute;
+                    bottom: 0;
+                    width: 100%;
+                    padding: 30px 20px;
+
+                    h3 {
+                        background-color: var(--color-black-dull);
+                        color: var(--color-white);
+                        text-align: center;
+                        padding: 20px 0;
+                        @include font24mon;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.service {
+    padding: 60px 0 175px 0;
+    background-color: var(--bgcolor-service);
+
+    .service-head {
+        color: var(--color-white);
+
+        h2 {
+            text-align: center;
+            @include font48;
+            font-family: var(--font-family-montserrat);
+        }
+
+        p {
+            text-align: center;
+            margin: 20px 0 45px 0;
+            @include font18;
+            font-weight: 400;
+        }
+    }
+
+    .service-head2 {
+        color: var(--color-white);
+        @include flex-center;
+        padding: 50px 0 100px 0;
+
+        h3 {
+            @include font55;
+            font-family: var(--font-family-montserrat);
+            max-width: 840px;
+            text-align: center;
+        }
+    }
+}
+
+.margin-gallary {
+    background-color: var(--color-gray-header);
+    position: relative;
+    padding: 670px 0 50px 0;
+
+    @media (max-width: 1024px) {
+        padding: 900px 0 50px 0;
+    }
+
+    @media (max-width: 730px) {
+        padding: 800px 0 50px 0;
+    }
+
+    @media (max-width: 670px) {
+        padding: 700px 0 50px 0;
+    }
+
+    @media (max-width: 576px) {
+        padding: 1100px 0 50px 0;
+    }
+
+    .margin-div {
+        position: absolute;
+        top: -175px;
+        width: 100%;
+
+        .margin-grid {
+            @include grid-3-columns;
+            gap: 20px;
+
+            @media (max-width: 1024px) {
+                @include grid-2-columns;
+            }
+
+            @media (max-width: 576px) {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .margin-grid-img {
+                overflow: hidden;
+                border-radius: 20px;
+                border: 2px solid var(--color-gray-header);
+
+                @media (max-width: 576px) {
+                    &:nth-child(3n + 1) {
+                        display: none;
+                    }
+                }
+
+                img {
+                    width: 100%;
+                    max-height: 350px;
+                    height: 100%;
+                    object-fit: cover;
+                    border-radius: 20px;
+                    cursor: pointer;
+                    transition: 0.3s ease-in-out;
+
+                    &:hover {
+                        transform: scale(1.2);
+                        transition: 0.3s ease-in-out;
+                    }
+
+                    @media (max-width: 576px) {
+                        min-height: 300px;
+                        max-height: 300px;
+                    }
+                }
+            }
+        }
+    }
+
+    .margin-price {
+        .pricing-head {
+            h2 {
+                text-align: center;
+                margin-bottom: 45px;
+                @include font55;
+                font-family: var(--font-family-montserrat);
+                color: var(--color-white);
+            }
+        }
+
+        .pricing-head-grid {
+            @include grid-2-columns;
+
+            .pricing-head-grid1 {
+                .pricing-head-grid1-box {
+                    padding: 20px 30px;
+                    background-color: var(--color-white);
+                    margin-bottom: 20px;
+
+                    .phgb-flex {
+                        @include flex;
+                        justify-content: space-between;
+                        padding: 20px 0;
+
+                        h3 {
+                            @include font24mon;
+                            color: var(--color-black-light);
+                        }
+
+                        span {
+                            display: block;
+                            @include font24mon;
+                            color: var(--color-gray-header);
+                            font-weight: 600;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
