@@ -6,6 +6,7 @@
         display: grid;
         grid-template-columns: 1fr 60%;
         overflow: hidden;
+        background-color: var(--color-white);
 
         @media (max-width: 576px) {
             @include grid-1-columns;

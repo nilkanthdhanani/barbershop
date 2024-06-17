@@ -1,6 +1,9 @@
 @import '../../styles/typography/typography';
 
 .footer {
+    position: sticky;
+    bottom: 0;
+    z-index: -1;
     background-color: var(--bgcolor-footer);
     padding: 30px 0;
     color: var(--color-white);
