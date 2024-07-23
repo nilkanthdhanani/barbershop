@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import './ourteam.scss';
 import ourteamHB from '../../assets/images/jpg/ourteamHB.jpg';
 import team1 from '../../assets/images/jpg/team1.jpg';
@@ -12,9 +12,14 @@ import { FaXTwitter } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa6";
 
 export default function Ourteam() {
+
+  const topRef = useRef(null);
+  useEffect(() => {
+    topRef.current.scrollIntoView({ behavior: "smooth" });
+  }, []);
   return (
     <div>
-      <div className="brbers">
+      <div className="brbers" ref={topRef}>
         <div className="brbers-grid">
           <div className="brbers-grid1" data-aos="fade-right" data-aos-duration="5000">
             <div className="bg1">

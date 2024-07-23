@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import './gallary.scss';
 import haircut from '../../assets/images/jpg/haircut.jpg';
 import gallary1 from '../../assets/images/jpg/gallary1.jpg';
@@ -13,10 +13,13 @@ import cutting5 from '../../assets/images/jpg/cutting5.jpg';
 import cutting6 from '../../assets/images/jpg/cutting6.jpg';
 
 export default function Gallary() {
+  const topRef = useRef(null);
+  useEffect(() => {
+    topRef.current.scrollIntoView({ behavior: "smooth" });
+  }, []);
   return (
     <div>
-
-      <div className="gallary">
+      <div className="gallary" ref={topRef}>
         <img src={haircut} alt="haircut" />
         <div className="gallary-content">
           <div className="container">

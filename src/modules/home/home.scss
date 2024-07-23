@@ -2,10 +2,10 @@
 @import "../../styles/mixin/mixin";
 
 .hero-banner {
-    margin-top: 60px;
+    padding-top: 150px;
 
     @media (max-width: 1024px) {
-        margin-top: 0;
+        padding-top: 73px;
     }
 
     .hero-banner-grid {

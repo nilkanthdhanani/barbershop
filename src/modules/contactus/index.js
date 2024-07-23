@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import './contactus.scss';
 import contact from '../../assets/images/jpg/contact.jpg';
 
@@ -27,9 +27,14 @@ export default function Contactus() {
     });
   };
 
+  const topRef = useRef(null);
+  useEffect(() => {
+    topRef.current.scrollIntoView({ behavior: "smooth" });
+  }, []);
+
   return (
     <div>
-      <div className="contact">
+      <div className="contact" ref={topRef}>
         <div className="container2">
           <div className="contact-grid">
             <div className="contact-grid1">

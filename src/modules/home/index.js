@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import './home.scss';
 import heroBanner from '../../assets/images/jpg/heroBanner.jpg';
 import location from '../../assets/images/png/location.png';
@@ -73,9 +73,14 @@ export default function Home() {
     ]
   };
 
+  const topRef = useRef(null);
+  useEffect(() => {
+    topRef.current.scrollIntoView({ behavior: "smooth" });
+  }, []);
+
   return (
     <div>
-      <div className="hero-banner">
+      <div className="hero-banner" ref={topRef}>
         <div className="container">
           <div className="hero-banner-grid">
             <div className="hero-banner-grid1" data-aos="fade-right" data-aos-duration="5000">

@@ -2,6 +2,12 @@
 @import "../../styles/mixin/mixin";
 
 .brbers {
+    padding-top: 90px;
+
+    @media (max-width: 1024px) {
+        padding-top: 73px;
+    }
+
     .brbers-grid {
         display: grid;
         grid-template-columns: 1fr 60%;
